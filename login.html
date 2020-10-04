@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700"
+        rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+    <title>Login | TabWebinar</title>
+</head>
+
+<body class="grey-bg">
+    <div class="login-page">
+        <div class="login-banner" style="background-image: url('./images/banner.png');">
+            <div class="login-banner-logo">
+                <img src="./images/circle-logo.png" alt="TabWebinar">
+            </div>
+        </div>
+
+        <div class="tabwebinar-form">
+            <h3 class="form-title">Login</h3>
+            <form id="loginForm">
+                <div class="form-group email-field-grp">
+                    <div class="input"><i class="fa fa-at" aria-hidden="true"></i><input required type="email" class="form-control email-field" id="email" name="email" placeholder="Email Id"></div>
+                    <div class="error-msg">Email is Incorrect</div>
+                </div>
+                <div class="form-group">
+                    <div class="input"><i class="fa fa-lock" aria-hidden="true"></i><input required type="password" class="form-control password" id="password" name="password"  placeholder="Password"></div>
+                    <div class="error-msg">Password is Incorrect</div>
+                </div>
+                <button type="submit" class="primary-btn">Login</button>
+            </form>
+            <div class="form-bottom-content">
+                <p><a href="/forgot-password">Forgot Password</a></p>
+                <p>New to Tab Webinar? <a href="#" class="createAccount">Create Account</a></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
