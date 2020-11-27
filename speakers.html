@@ -31,6 +31,21 @@
                     <ul class="header_login">
                         <li><a href="#"><img src="./images/password.png" alt="Password"> Login</a></li>
                         <li><a href="#"><img src="./images/login.png" alt="Login"> Register</a></li>
+                        <li class="logged-user">
+                            <div class="logged-user-holder">
+                                <div class="user-avtar" style="background-image: url('./images/author_small.png');"></div>
+                                <div class="user-name">Nishant</div>
+                            </div>
+                            <div class="loggged-user-pop">
+                                <div class="loggged-user-inner">
+                                    <ul>
+                                        <li><a href="#">Your Account</a></li>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">Sign Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -81,12 +96,11 @@
                 <div class="banner-parallax" style="background-image: url('./images/team-banner.png');"></div>
                 <div class="container">
                     <div class="banner-content">
-                        <h1>Meet The Team</h1>
+                        <h1>Speakers</h1>
                     </div>
                 </div>
             </div>
         </section>
-
         <section class="speakers">
             <div class="container">
                 <div class="row">
@@ -283,6 +297,522 @@
             </div>
         </section>
 
+        <section class="webinar_section2">
+            <div class="container">
+                <h1 class="available_webinar_title">Available Webinars</h1>
+            </div>
+            <div class="container filter-container">
+                <div class="webinair-filter">
+
+                    <div class="topic-filter-wrapper">
+                        <div class="sidebar-filter-btn-holder"><a class="sidebar-filter-btn" href="#"><i
+                                    class="fa fa-filter" aria-hidden="true"></i> Filters</a></div>
+
+                        <div class="filter-search">
+                            <form action="/">
+                                <!-- <div class="filter-search-trigger"><i class="fas fa-search"></i></div> -->
+                                <div class="form-group">
+                                    <input type="search" class="form-control" id="fil-search" placeholder="Search..."
+                                        name="search">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="short-filter">
+                            <a class="short-btn">Short by <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul>
+                                <li><a class="filter_a" data-filter=".live">Default</a></li>
+                                <li><a class="filter_a" data-filter=".live">Name</a></li>
+                                <li><a class="filter_a" data-filter=".live">Popular</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="filter-sidebar for-desktop">
+                        <div class="filter-sidebar-inner">
+                            <div class="selected-filter sidebar-filter-col">
+                                <h4>Selected<span class="filter-widget-toggle active"></span></h4>
+                                <div class="filter-widget">
+                                    <div class="selected-filter-holder">
+                                        <span class="no-selected-val" style="display: none;">No Selected Filter</span>
+                                        <div class="selected-cat">Selected 1 <span class="remove-cat"><i
+                                                    class="fa fa-times-circle" aria-hidden="true"></i></span></div>
+                                        <div class="selected-cat">Selected 2 <span class="remove-cat"><i
+                                                    class="fa fa-times-circle" aria-hidden="true"></i></span></div>
+                                        <div class="selected-cat">Selected 3 <span class="remove-cat"><i
+                                                    class="fa fa-times-circle" aria-hidden="true"></i></span></div>
+                                        <div class="selected-cat">Selected 4 <span class="remove-cat"><i
+                                                    class="fa fa-times-circle" aria-hidden="true"></i></span></div>
+                                    </div>
+                                    <div class="clear-all">Clear All <i class="fa fa-times-circle"
+                                            aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <form>
+                                <div class="sidebar-filter-col">
+                                    <h4>Filter by Industry<span class="filter-widget-toggle"></span></h4>
+                                    <div class="filter-widget">
+                                        <ul class="filter-checkbox">
+                                            <li>
+                                                <input class="filter" data-filter=".topic-1" type="checkbox"
+                                                    name="checkboxButton">
+                                                <label class="checkbox-label" for="topic-1">Topic 1</label>
+                                            </li>
+                                            <li>
+                                                <input class="filter" data-filter=".topic-2" type="checkbox"
+                                                    name="checkboxButton">
+                                                <label class="checkbox-label" for="topic-2">Topic 2</label>
+                                            </li>
+                                            <li>
+                                                <input class="filter" data-filter=".topic-3" type="checkbox"
+                                                    name="checkboxButton">
+                                                <label class="checkbox-label" for="topic-3">Topic 3</label>
+                                            </li>
+                                            <li>
+                                                <input class="filter" data-filter=".topic-4" type="checkbox"
+                                                    name="checkboxButton">
+                                                <label class="checkbox-label" for="topic-4">Topic 4</label>
+                                            </li>
+                                            <li>
+                                                <input class="filter" data-filter=".topic-5" type="checkbox"
+                                                    name="checkboxButton">
+                                                <label class="checkbox-label" for="topic-5">Topic 5</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sidebar-filter-col">
+
+                                    <h4>Filter by Webinars<span class="filter-widget-toggle"></span></h4>
+                                    <div class="filter-widget">
+                                        <ul class="filter-checkbox">
+                                            <li>
+                                                <input class="filter" data-filter=".live" type="checkbox"
+                                                    name="checkboxButton" id="live">
+                                                <label class="checkbox-label" for="live">Live</label>
+                                            </li>
+                                            <li>
+                                                <input class="filter" data-filter=".automated-live" type="checkbox"
+                                                    name="checkboxButton" id="automated-live">
+                                                <label class="checkbox-label" for="automated-live">Automated
+                                                    Live</label>
+                                            </li>
+                                            <li>
+                                                <input class="filter" data-filter=".recorded" type="checkbox"
+                                                    name="checkboxButton" id="recorded">
+                                                <label class="checkbox-label" for="recorded">Recorded</label>
+                                            </li>
+                                            <li>
+                                                <input class="filter" data-filter=".series" type="checkbox"
+                                                    name="checkboxButton" id="series">
+                                                <label class="checkbox-label" for="series">Series</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </form>
+                            <div class="close-sidebar">Close</div>
+                        </div>
+                        <div class="filter-apply-bar d-md-none">
+                            <a class="apply-btn">Apply</a>
+                            <a class="cancel-btn">Cancel</a>
+                         </div>
+                    </div>
+
+
+                    <div class="filter-sidebar for-mobile">
+                        <div class="filter-sidebar-inner">
+                            <div class="selected-filter sidebar-filter-col">
+                                <h4>Selected<span class="filter-widget-toggle active"></span></h4>
+                                <div class="filter-widget">
+                                    <div class="selected-filter-holder">
+                                        <span class="no-selected-val" style="display: none;">No Selected Filter</span>
+                                        <div class="selected-cat">Selected 1 <span class="remove-cat"><i
+                                                    class="fa fa-times-circle" aria-hidden="true"></i></span></div>
+                                        <div class="selected-cat">Selected 2 <span class="remove-cat"><i
+                                                    class="fa fa-times-circle" aria-hidden="true"></i></span></div>
+                                        <div class="selected-cat">Selected 3 <span class="remove-cat"><i
+                                                    class="fa fa-times-circle" aria-hidden="true"></i></span></div>
+                                        <div class="selected-cat">Selected 4 <span class="remove-cat"><i
+                                                    class="fa fa-times-circle" aria-hidden="true"></i></span></div>
+                                    </div>
+                                    <div class="clear-all">Clear All <i class="fa fa-times-circle"
+                                            aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <form>
+                                <div class="sidebar-filter-col">
+                                    <h4>Filter by Industry<span class="filter-widget-toggle"></span></h4>
+                                    <div class="filter-widget">
+                                        <ul class="filter-checkbox">
+                                            <li>
+                                                <input class="mobile-filter" data-filter=".topic-1" type="checkbox"
+                                                    name="checkboxButton">
+                                                <label class="mobile-checkbox-label" for="topic-1">Topic 1</label>
+                                            </li>
+                                            <li>
+                                                <input class="mobile-filter" data-filter=".topic-2" type="checkbox"
+                                                    name="checkboxButton">
+                                                <label class="mobile-checkbox-label" for="topic-2">Topic 2</label>
+                                            </li>
+                                            <li>
+                                                <input class="mobile-filter" data-filter=".topic-3" type="checkbox"
+                                                    name="checkboxButton">
+                                                <label class="mobile-checkbox-label" for="topic-3">Topic 3</label>
+                                            </li>
+                                            <li>
+                                                <input class="mobile-filter" data-filter=".topic-4" type="checkbox"
+                                                    name="checkboxButton">
+                                                <label class="mobile-checkbox-label" for="topic-4">Topic 4</label>
+                                            </li>
+                                            <li>
+                                                <input class="mobile-filter" data-filter=".topic-5" type="checkbox"
+                                                    name="checkboxButton">
+                                                <label class="mobile-checkbox-label" for="topic-5">Topic 5</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="sidebar-filter-col">
+
+                                    <h4>Filter by Webinars<span class="filter-widget-toggle"></span></h4>
+                                    <div class="filter-widget">
+                                        <ul class="filter-checkbox">
+                                            <li>
+                                                <input class="mobile-filter" data-filter=".live" type="checkbox"
+                                                    name="checkboxButton" id="live">
+                                                <label class="mobile-checkbox-label" for="live">Live</label>
+                                            </li>
+                                            <li>
+                                                <input class="mobile-filter" data-filter=".automated-live" type="checkbox"
+                                                    name="checkboxButton" id="automated-live">
+                                                <label class="mobile-checkbox-label" for="automated-live">Automated
+                                                    Live</label>
+                                            </li>
+                                            <li>
+                                                <input class="mobile-filter" data-filter=".recorded" type="checkbox"
+                                                    name="checkboxButton" id="recorded">
+                                                <label class="mobile-checkbox-label" for="recorded">Recorded</label>
+                                            </li>
+                                            <li>
+                                                <input class="mobile-filter" data-filter=".series" type="checkbox"
+                                                    name="checkboxButton" id="series">
+                                                <label class="mobile-checkbox-label" for="series">Series</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </form>
+                            <div class="close-sidebar">Close</div>
+                        </div>
+                        <div class="filter-apply-bar d-md-none">
+                            <a class="apply-btn">Apply</a>
+                            <a class="cancel-btn">Cancel</a>
+                         </div>
+                    </div>
+
+
+                </div>
+                <div class="row wenbinar-grid grid">
+                    <div class="grid-sizer"></div>
+                    <div class="col-md-3 grid-item">
+                        <div class="available_image_card">
+                            <div class="available_card_image_holder"
+                                style="background-image: url('./images/bigstock-img1.png');">
+                                <div class="status-bar">Live</div>
+                                <div class="card_image_bottom_group">
+                                    <div class="author-details">
+                                        <div class="author-img"><img src="../images/client2.png" alt="Victor Oakes">
+                                        </div>
+                                        <div class="author-detail-holder">
+                                            <span class="author-name">Victor Oakes</span>
+                                            <span class="author-job-title">job title goes here</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="available_card_content">
+                                <h3 class="title">Title goes here</h3>
+                                <div class="byline">
+                                    <span><img src="../images/calendar (4) copy.png" alt="Calendar"><span class="post-date">Wed Nov 20, 2020</span></span>
+                                    <span><img src="../images/clock (4) copy (1).png" alt="Time"><span class="post-time">6:35 pm</span></span>
+                                    <span><img src="../images/hour copy.png" alt="Time"><span class="post-mins">90 mins</span></span>
+                                </div>
+                                <div class="topic"><strong>Industry : </strong><span class="tag">Engineering</span>
+                                </div>
+                                <div class="available_card_button_group">
+                                    <a href="#" class="primary-btn available_card_btn1" tabindex="0">$390 Live</a>
+                                    <a href="#" class="secondary-btn available_card_btn2" tabindex="0">$189 Recorded</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 grid-item">
+                        <div class="available_image_card">
+                            <div class="available_card_image_holder"
+                                style="background-image: url('./images/bigstock-img2.png');">
+                                <div class="status-bar">Live</div>
+                                <div class="card_image_bottom_group">
+                                    <div class="author-details">
+                                        <div class="author-img"><img src="../images/client2.png" alt="Victor Oakes">
+                                        </div>
+                                        <div class="author-detail-holder">
+                                            <span class="author-name">Victor Oakes</span>
+                                            <span class="author-job-title">job title goes here</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="available_card_content">
+                                <h3 class="title">Nursing: Cms Cop Standards For Hospitals And Proposed Changes: 2020 Update</h3>
+                                <div class="byline">
+                                    <span><img src="../images/calendar (4) copy.png" alt="Calendar"><span class="post-date">Wed Nov 20, 2020</span></span>
+                                    <span><img src="../images/clock (4) copy (1).png" alt="Time"><span class="post-time">6:35 pm</span></span>
+                                    <span><img src="../images/hour copy.png" alt="Time"><span class="post-mins">90 mins</span></span>
+                                </div>
+                                <div class="topic"><strong>Industry : </strong><span class="tag">Engineering</span>
+                                </div>
+                                <div class="available_card_button_group">
+                                    <a href="#" class="primary-btn available_card_btn1" tabindex="0">$390 Live</a>
+                                    <a href="#" class="secondary-btn available_card_btn2" tabindex="0">$189 Recorded</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 grid-item">
+                        <div class="available_image_card">
+                            <div class="available_card_image_holder"
+                                style="background-image: url('./images/bigstock-img3.png');">
+                                <div class="status-bar">Live</div>
+                                <div class="card_image_bottom_group">
+                                    <div class="author-details">
+                                        <div class="author-img"><img src="../images/client2.png" alt="Victor Oakes">
+                                        </div>
+                                        <div class="author-detail-holder">
+                                            <span class="author-name">Victor Oakes</span>
+                                            <span class="author-job-title">job title goes here</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="available_card_content">
+                                <h3 class="title">Title goes here</h3>
+                                <div class="byline">
+                                    <span><img src="../images/calendar (4) copy.png" alt="Calendar"><span class="post-date">Wed Nov 20, 2020</span></span>
+                                    <span><img src="../images/clock (4) copy (1).png" alt="Time"><span class="post-time">6:35 pm</span></span>
+                                    <span><img src="../images/hour copy.png" alt="Time"><span class="post-mins">90 mins</span></span>
+                                </div>
+                                <div class="topic"><strong>Industry : </strong><span class="tag">Engineering</span>
+                                </div>
+                                <div class="available_card_button_group">
+                                    <a href="#" class="primary-btn available_card_btn1" tabindex="0">$390 Live</a>
+                                    <a href="#" class="secondary-btn available_card_btn2" tabindex="0">$189 Recorded</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 grid-item">
+                        <div class="available_image_card">
+                            <div class="available_card_image_holder"
+                                style="background-image: url('./images/bigstock-img3.png');">
+                                <div class="status-bar">Live</div>
+                                <div class="card_image_bottom_group">
+                                    <div class="author-details">
+                                        <div class="author-img"><img src="../images/client2.png" alt="Victor Oakes">
+                                        </div>
+                                        <div class="author-detail-holder">
+                                            <span class="author-name">Victor Oakes</span>
+                                            <span class="author-job-title">job title goes here</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="available_card_content">
+                                <h3 class="title">Title goes here</h3>
+                                <div class="byline">
+                                    <span><img src="../images/calendar (4) copy.png" alt="Calendar"><span class="post-date">Wed Nov 20, 2020</span></span>
+                                    <span><img src="../images/clock (4) copy (1).png" alt="Time"><span class="post-time">6:35 pm</span></span>
+                                    <span><img src="../images/hour copy.png" alt="Time"><span class="post-mins">90 mins</span></span>
+                                </div>
+                                <div class="topic"><strong>Industry : </strong><span class="tag">Engineering</span>
+                                </div>
+                                <div class="available_card_button_group">
+                                    <a href="#" class="primary-btn available_card_btn1" tabindex="0">$390 Live</a>
+                                    <a href="#" class="secondary-btn available_card_btn2" tabindex="0">$189 Recorded</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 grid-item">
+                        <div class="available_image_card">
+                            <div class="available_card_image_holder"
+                                style="background-image: url('./images/bigstock-img3.png');">
+                                <div class="status-bar">Live</div>
+                                <div class="card_image_bottom_group">
+                                    <div class="author-details">
+                                        <div class="author-img"><img src="../images/client2.png" alt="Victor Oakes">
+                                        </div>
+                                        <div class="author-detail-holder">
+                                            <span class="author-name">Victor Oakes</span>
+                                            <span class="author-job-title">job title goes here</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="available_card_content">
+                                <h3 class="title">Title goes here</h3>
+                                <div class="byline">
+                                    <span><img src="../images/calendar (4) copy.png" alt="Calendar"><span class="post-date">Wed Nov 20, 2020</span></span>
+                                    <span><img src="../images/clock (4) copy (1).png" alt="Time"><span class="post-time">6:35 pm</span></span>
+                                    <span><img src="../images/hour copy.png" alt="Time"><span class="post-mins">90 mins</span></span>
+                                </div>
+                                <div class="topic"><strong>Industry : </strong><span class="tag">Engineering</span>
+                                </div>
+                                <div class="available_card_button_group">
+                                    <a href="#" class="primary-btn available_card_btn1" tabindex="0">$390 Live</a>
+                                    <a href="#" class="secondary-btn available_card_btn2" tabindex="0">$189 Recorded</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 grid-item">
+                        <div class="available_image_card">
+                            <div class="available_card_image_holder"
+                                style="background-image: url('./images/bigstock-img1.png');">
+                                <div class="status-bar">Live</div>
+                                <div class="card_image_bottom_group">
+                                    <div class="author-details">
+                                        <div class="author-img"><img src="../images/client2.png" alt="Victor Oakes">
+                                        </div>
+                                        <div class="author-detail-holder">
+                                            <span class="author-name">Victor Oakes</span>
+                                            <span class="author-job-title">job title goes here</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="available_card_content">
+                                <h3 class="title">Title goes here</h3>
+                                <div class="byline">
+                                    <span><img src="../images/calendar (4) copy.png" alt="Calendar"><span class="post-date">Wed Nov 20, 2020</span></span>
+                                    <span><img src="../images/clock (4) copy (1).png" alt="Time"><span class="post-time">6:35 pm</span></span>
+                                    <span><img src="../images/hour copy.png" alt="Time"><span class="post-mins">90 mins</span></span>
+                                </div>
+                                <div class="topic"><strong>Industry : </strong><span class="tag">Engineering</span>
+                                </div>
+                                <div class="available_card_button_group">
+                                    <a href="#" class="primary-btn available_card_btn1" tabindex="0">$390 Live</a>
+                                    <a href="#" class="secondary-btn available_card_btn2" tabindex="0">$189 Recorded</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 grid-item">
+                        <div class="available_image_card">
+                            <div class="available_card_image_holder"
+                                style="background-image: url('./images/bigstock-img2.png');">
+                                <div class="status-bar">Live</div>
+                                <div class="card_image_bottom_group">
+                                    <div class="author-details">
+                                        <div class="author-img"><img src="../images/client2.png" alt="Victor Oakes">
+                                        </div>
+                                        <div class="author-detail-holder">
+                                            <span class="author-name">Victor Oakes</span>
+                                            <span class="author-job-title">job title goes here</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="available_card_content">
+                                <h3 class="title">Title goes here</h3>
+                                <div class="byline">
+                                    <span><img src="../images/calendar (4) copy.png" alt="Calendar"><span class="post-date">Wed Nov 20, 2020</span></span>
+                                    <span><img src="../images/clock (4) copy (1).png" alt="Time"><span class="post-time">6:35 pm</span></span>
+                                    <span><img src="../images/hour copy.png" alt="Time"><span class="post-mins">90 mins</span></span>
+                                </div>
+                                <div class="topic"><strong>Industry : </strong><span class="tag">Engineering</span>
+                                </div>
+                                <div class="available_card_button_group">
+                                    <a href="#" class="primary-btn available_card_btn1" tabindex="0">$390 Live</a>
+                                    <a href="#" class="secondary-btn available_card_btn2" tabindex="0">$189 Recorded</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 grid-item">
+                        <div class="available_image_card">
+                            <div class="available_card_image_holder"
+                                style="background-image: url('./images/bigstock-img3.png');">
+                                <div class="status-bar">Live</div>
+                                <div class="card_image_bottom_group">
+                                    <div class="author-details">
+                                        <div class="author-img"><img src="../images/client2.png" alt="Victor Oakes">
+                                        </div>
+                                        <div class="author-detail-holder">
+                                            <span class="author-name">Victor Oakes</span>
+                                            <span class="author-job-title">job title goes here</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="available_card_content">
+                                <h3 class="title">Title goes here</h3>
+                                <div class="byline">
+                                    <span><img src="../images/calendar (4) copy.png" alt="Calendar"><span class="post-date">Wed Nov 20, 2020</span></span>
+                                    <span><img src="../images/clock (4) copy (1).png" alt="Time"><span class="post-time">6:35 pm</span></span>
+                                    <span><img src="../images/hour copy.png" alt="Time"><span class="post-mins">90 mins</span></span>
+                                </div>
+                                <div class="topic"><strong>Industry : </strong><span class="tag">Engineering</span>
+                                </div>
+                                <div class="available_card_button_group">
+                                    <a href="#" class="primary-btn available_card_btn1" tabindex="0">$390 Live</a>
+                                    <a href="#" class="secondary-btn available_card_btn2" tabindex="0">$189 Recorded</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 grid-item">
+                        <div class="available_image_card">
+                            <div class="available_card_image_holder"
+                                style="background-image: url('./images/bigstock-img1.png');">
+                                <div class="status-bar">Live</div>
+                                <div class="card_image_bottom_group">
+                                    <div class="author-details">
+                                        <div class="author-img"><img src="../images/client2.png" alt="Victor Oakes">
+                                        </div>
+                                        <div class="author-detail-holder">
+                                            <span class="author-name">Victor Oakes</span>
+                                            <span class="author-job-title">job title goes here</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="available_card_content">
+                                <h3 class="title">Title goes here</h3>
+                                <div class="byline">
+                                    <span><img src="../images/calendar (4) copy.png" alt="Calendar"><span class="post-date">Wed Nov 20, 2020</span></span>
+                                    <span><img src="../images/clock (4) copy (1).png" alt="Time"><span class="post-time">6:35 pm</span></span>
+                                    <span><img src="../images/hour copy.png" alt="Time"><span class="post-mins">90 mins</span></span>
+                                </div>
+                                <div class="topic"><strong>Industry : </strong><span class="tag">Engineering</span>
+                                </div>
+                                <div class="available_card_button_group">
+                                    <a href="#" class="primary-btn available_card_btn1" tabindex="0">$390 Live</a>
+                                    <a href="#" class="secondary-btn available_card_btn2" tabindex="0">$189 Recorded</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="footer">
     <div class="footer_top">
@@ -325,8 +855,8 @@
                         <li><a href="" class="social_links"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
                     </ul>
                     <div class="app_store">
-                        <a href="#" class="app_store_item"><img src="./images/footer_app_store.png" alt="App Store"></a>
-                        <a href="#" class="app_store_item"><img src="./images/footer_google_play.png" alt="Google Play"></a>
+                        <a href="#" class="app_store_item"><img src="../images/footer_app_store.png" alt="App Store"></a>
+                        <a href="#" class="app_store_item"><img src="../images/footer_google_play.png" alt="Google Play"></a>
                     </div>
                 </div>
             </div>

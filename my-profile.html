@@ -29,6 +29,21 @@
                     <ul class="header_login">
                         <li><a href="#"><img src="./images/password.png" alt="Password"> Login</a></li>
                         <li><a href="#"><img src="./images/login.png" alt="Login"> Register</a></li>
+                        <li class="logged-user">
+                            <div class="logged-user-holder">
+                                <div class="user-avtar" style="background-image: url('./images/author_small.png');"></div>
+                                <div class="user-name">Nishant</div>
+                            </div>
+                            <div class="loggged-user-pop">
+                                <div class="loggged-user-inner">
+                                    <ul>
+                                        <li><a href="#">Your Account</a></li>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">Sign Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -93,7 +108,7 @@
               </div>
               <div class="personal-detail-section">
                 <form action="">
-                  <h5 class="toggle-title">Personal Details <span class="toggle-icon"></span></h5>
+                  <h5 class="toggle-title active">Personal Details <span class="toggle-icon"></span></h5>
                   <div class="toggle-group">
                     <div class="pl-lg-4">
                       <div class="row">
@@ -147,7 +162,7 @@
                     </div>
                   </div>
                   <hr>
-                  <h5 class="toggle-title">Industry Type <span class="toggle-icon"></span></h5>
+                  <h5 class="toggle-title active">Industry Type <span class="toggle-icon"></span></h5>
                   <div class="toggle-group">
                     <div class="pl-lg-4">
                       <div class="selected-industry-holder">
@@ -164,7 +179,7 @@
                     </div>
                   </div>
                   <hr>
-                  <h5 class="toggle-title">Invoice Details <span class="toggle-icon"></span></h5>
+                  <h5 class="toggle-title active">Invoice Details <span class="toggle-icon"></span></h5>
                   <div class="toggle-group">
                     <div class="pl-lg-4">
                       <div class="row">
@@ -491,7 +506,6 @@
                       <div class="modal-content">
                         <div class="modal-header">
                           <h3>Industries</h3>
-                          <a type="button" class="modal-close">&times;</a>
                         </div>
                         <div class="modal-body">
                           <div class="row">
@@ -602,17 +616,14 @@
 
                               </ul>
                             </div>
-
                           </div>
-
-                          <div class="industry-filter-btn">
-                            <a class="appy-filter">Apply</a>
-                            <a class="clear-filter">Clear</a>
-                          </div>
-
                         </div>
 
                       </div>
+                    </div>
+                    <div class="industry-filter-btn">
+                      <a class="appy-filter">Apply</a>
+                      <a class="clear-filter modal-close">Clear</a>
                     </div>
                   </div>
 
