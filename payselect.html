@@ -121,46 +121,73 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="continue-action">
+                                <a href="javascript:void(0)" class="primary-btn add_card_btn">Continue</a>
+                            </div>
                         </div>
                     </div>
                 <div class="add-card-action">
-                    <a href="javascript:void(0)" class="primary-btn add_card_btn"><i class="far fa-credit-card"></i> Add Card</a>
-                    <div class="add-card-detail">
-                        <h4>Add Debit/Credit/ATM Card</h4>
-                        <form action="" id="add-card">
-                            <div class="input_field">
-                                <label>Card Number</label>
-                                <input type="text" name="cardnumber" placeholder="Enter Your Card Number">
-                            </div>
-                            <div class="input_field">
-                                <label>Name on Card</label>
-                                <input type="text" name="cardname" placeholder="Name on Card">
-                            </div>
-                            <div class="two_col_field clearfix">
-                                <div class="input_field">
-                                    <label>Expiary Date</label>
-                                    <div class="card_validity">
-                                        <span class="card_valid">Valid thru</span>
-                                        <span class="card_month">
-                                            <select class="card_m" name="month" required="" tabindex="4"><option disabled="" value="MM">MM</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                        </span>
-                                        <span class="card_year">
-                                            <select class="card_y" name="year" required="" tabindex="5"><option disabled="" value="YY">YY</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option></select> 
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="input_field">
-                                    <label>CVV</label>
-                                    <input type="password" name="cvv" placeholder="CVV" class="cvv">
-                                </div>
-                            </div>
-                            <div class="submit_action">
-                                <button type="submit" class="primary-btn">Save and Continue</button>
-                            </div>
-                        </form>
-                    </div>
+                    <a href="javascript:void(0)" class="primary-btn add_card_btn"  data-toggle="modal" data-target="#addCard"><i class="far fa-credit-card"></i> Add Card</a>
                 </div>
             </div>
+            <!-- Modal -->
+<div id="addCard" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add Debit/Credit/ATM Card</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="add-card-detail">
+                <form action="" id="add-card">
+                    <div class="input_field">
+                        <label>Card Number</label>
+                        <input type="text" name="cardnumber" placeholder="Enter Your Card Number">
+                    </div>
+                    <div class="two_col_field clearfix">
+                        <div class="input_field">
+                            <label>Expiary Date</label>
+                            <div class="card_validity">
+                                <span class="card_valid">Valid thru</span>
+                                <span class="card_month">
+                                    <select class="card_m" name="month" required="" tabindex="4"><option disabled="" value="MM">MM</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+                                </span>
+                                <span class="card_year">
+                                    <select class="card_y" name="year" required="" tabindex="5"><option disabled="" value="YY">YY</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option></select> 
+                                </span>
+                            </div>
+                        </div>
+                        <div class="input_field">
+                            <label>CVV</label>
+                            <input type="password" name="cvv" placeholder="CVV" class="cvv"  maxlength="3">
+                        </div>
+                    </div>
+                    
+                    <div class="input_field">
+                        <label>Name on Card</label>
+                        <input type="text" name="cardname" placeholder="Name on Card">
+                    </div>
+                    
+                    <div class="input_field">
+                        <label>Email Address</label>
+                        <input type="email" name="cardname" placeholder="abc@xyz.com">
+                    </div>
+                    <div class="submit_action">
+                        <button type="submit" class="primary-btn">Save and Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
         </div>
 
         <!-- Footer -->
